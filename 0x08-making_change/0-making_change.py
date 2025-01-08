@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-def make_change(coins, total):
+def makeChange(coins, total):
     """
     Determines the fewest number of coins needed to meet a given total amount.
 
@@ -19,10 +19,10 @@ def make_change(coins, total):
         - If `dp[total]` remains infinity, it means the total cannot be made using the available coins.
 
     Example:
-        >>> make_change([1, 2, 25], 37)
+        >>> makeChange([1, 2, 25], 37)
         7
 
-        >>> make_change([1256, 54, 48, 16, 102], 1453)
+        >>> makeChange([1256, 54, 48, 16, 102], 1453)
         -1
     """
     if total <= 0:
