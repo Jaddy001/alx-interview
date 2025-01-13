@@ -1,7 +1,17 @@
 #!/usr/bin/python3
+"""Prime Game
+
+This module contains the implementation of the Prime Game problem. Maria and Ben take turns choosing a prime number from a set of
+consecutive integers starting from 1 up to n. The chosen prime number and its multiples are removed from the set. The player unable
+to make a move loses the game. The function determines the winner of each round based on optimal play.
+
+Requirements:
+- Python 3.4.3
+- PEP 8 style guide (version 1.7.x)
+- Executable file"""
+
 def isWinner(x, nums):
-    """
-    Determine the winner of the game.
+    """Determine the winner of the game.
 
     Args:
         x (int): Number of rounds.
@@ -9,7 +19,12 @@ def isWinner(x, nums):
 
     Returns:
         str or None: Name of the player with the most wins or None if it's a tie.
-    """
+
+    Constraints:
+        - x and each element of nums will not be larger than 10000.
+        - Only prime numbers are considered for moves.
+        - Maria always goes first.
+        - Both players play optimally."""
     if not nums or x < 1:
         return None
 
@@ -47,5 +62,15 @@ def isWinner(x, nums):
 
 # Example usage
 if __name__ == "__main__":
+    """Example test case:
+
+    Input:
+        x = 5
+        nums = [2, 5, 1, 4, 3]
+
+    Output:
+        Winner: Ben
+
+    Run the script to see the output for the example case."""
     print("Winner: {}".format(isWinner(5, [2, 5, 1, 4, 3])))
 
