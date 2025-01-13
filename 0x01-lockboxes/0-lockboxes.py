@@ -3,13 +3,13 @@
 def canUnlockAll(boxes):
     """
     Determines if all the boxes can be unlocked.
-    
-    The function performs a graph traversal (DFS) starting from box 0, using the keys 
-    in each unlocked box to open other boxes. The traversal continues until no more boxes 
+
+    The function performs a graph traversal (DFS) starting from box 0, using the keys
+    in each unlocked box to open other boxes. The traversal continues until no more boxes
     can be unlocked. If all boxes are unlocked, the function returns True; otherwise, False.
 
     Args:
-        boxes (list): A list of lists where each sublist represents a box, and contains 
+        boxes (list): A list of lists where each sublist represents a box, and contains
                       the keys (box numbers) that can be used to unlock other boxes.
 
     Returns:
