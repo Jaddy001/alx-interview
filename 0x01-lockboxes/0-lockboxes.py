@@ -1,8 +1,7 @@
 #!/usr/bin/python3
 
 def canUnlockAll(boxes):
-    """
-    Determines if all the boxes can be unlocked.
+    """Determines if all the boxes can be unlocked.
 
     The function performs a graph traversal (DFS) starting from box 0, using the keys
     in each unlocked box to open other boxes. The traversal continues until no more boxes
@@ -13,8 +12,7 @@ def canUnlockAll(boxes):
                       the keys (box numbers) that can be used to unlock other boxes.
 
     Returns:
-        bool: True if all boxes can be unlocked, False otherwise.
-    """
+        bool: True if all boxes can be unlocked, False otherwise."""
     # Create a set to keep track of unlocked boxes, starting with box 0 unlocked
     unlocked = set([0])
     
